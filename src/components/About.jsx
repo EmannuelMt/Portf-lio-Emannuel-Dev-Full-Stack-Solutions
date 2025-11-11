@@ -34,7 +34,7 @@ import {
 import './About.css';
 
 // Importando assets
-import profilePhoto from '../assets/images/AIDrawing_250911_d80e2d99-024a-4ae2-bd8e-9c4422800165_0_MiriCanvas-CbKexC7c.png';
+import profilePhoto from '../assets/images/IMG-20250323-WA0010-DWVwJOn1.jpg';
 import fallbackPhoto from '../assets/images/AIDrawing_250911_d80e2d99-024a-4ae2-bd8e-9c4422800165_0_MiriCanvas-CbKexC7c.png';
 
 const About = () => {
@@ -79,7 +79,7 @@ const About = () => {
       { 
         name: 'Node.js', 
         description: 'Desenvolvimento de APIs RESTful com foco em performance, segurança e boas práticas de código.', 
-        level: 78, 
+        level: 38, 
         category: 'Intermediário',
         icon: <FaNodeJs className="tech-icon" />,
         color: '#339933'
@@ -87,7 +87,7 @@ const About = () => {
       { 
         name: 'MongoDB', 
         description: 'Modelagem de dados, consultas eficientes e integração com aplicações Node.js e Express.', 
-        level: 82, 
+        level: 32, 
         category: 'Avançado',
         icon: <SiMongodb className="tech-icon" />,
         color: '#47A248'
@@ -95,7 +95,7 @@ const About = () => {
       { 
         name: 'Express', 
         description: 'Criação de servidores robustos com middlewares, rotas organizadas e tratamento de erros.', 
-        level: 75, 
+        level: 35, 
         category: 'Intermediário',
         icon: <SiExpress className="tech-icon" />,
         color: '#000000'
@@ -103,7 +103,7 @@ const About = () => {
       { 
         name: 'APIs REST', 
         description: 'Design e implementação de APIs RESTful seguindo padrões REST e documentação clara.', 
-        level: 80, 
+        level: 20, 
         category: 'Avançado',
         icon: <SiPostman className="tech-icon" />,
         color: '#FF6C37'
@@ -113,7 +113,7 @@ const About = () => {
       { 
         name: 'Git & GitHub', 
         description: 'Controle de versão avançado, trabalho em equipe e deploy contínuo com boas práticas.', 
-        level: 85, 
+        level: 25, 
         category: 'Avançado',
         icon: <FaGitAlt className="tech-icon" />,
         color: '#F05032'
@@ -121,7 +121,7 @@ const About = () => {
       { 
         name: 'Docker', 
         description: 'Containerização de aplicações e configuração de ambientes de desenvolvimento consistentes.', 
-        level: 65, 
+        level: 25, 
         category: 'Intermediário',
         icon: <FaDocker className="tech-icon" />,
         color: '#2496ED'
@@ -129,7 +129,7 @@ const About = () => {
       { 
         name: 'TypeScript', 
         description: 'Desenvolvimento type-safe com TypeScript para maior confiabilidade e manutenibilidade.', 
-        level: 75, 
+        level: 15, 
         category: 'Intermediário',
         icon: <SiTypescript className="tech-icon" />,
         color: '#3178C6'
@@ -137,7 +137,7 @@ const About = () => {
       { 
         name: 'Figma', 
         description: 'Prototipagem e colaboração em design para desenvolvimento front-end preciso.', 
-        level: 70, 
+        level: 20, 
         category: 'Intermediário',
         icon: <FaFigma className="tech-icon" />,
         color: '#F24E1E'

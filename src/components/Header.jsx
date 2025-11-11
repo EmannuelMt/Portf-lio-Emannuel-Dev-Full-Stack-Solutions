@@ -99,19 +99,13 @@ const Header = ({ theme, toggleTheme }) => {
   const socialLinks = [
     {
       name: 'GitHub',
-      href: 'https://github.com/emannuelmatos',
+      href: 'https://github.com/EmannuelMt',
       icon: <FaGithub className="social-icon" />,
       color: 'var(--social-github)'
     },
     {
-      name: 'LinkedIn',
-      href: 'https://linkedin.com/in/emannuelmatos',
-      icon: <FaLinkedin className="social-icon" />,
-      color: 'var(--social-linkedin)'
-    },
-    {
       name: 'WhatsApp',
-      href: 'https://wa.me/5511999999999',
+      href: 'https://wa.me/5562984317595',
       icon: <FaWhatsapp className="social-icon" />,
       color: 'var(--social-whatsapp)'
     }
@@ -412,31 +406,6 @@ const Header = ({ theme, toggleTheme }) => {
                 </motion.a>
               ))}
             </motion.div>
-
-            {/* Download CV Button */}
-            <motion.button
-              className="download-cv-btn"
-              onClick={handleDownloadCV}
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ 
-                duration: 0.5, 
-                delay: 1.0,
-                type: "spring" 
-              }}
-              whileHover={{ 
-                scale: 1.05, 
-                y: -2,
-                boxShadow: "0 10px 30px rgba(124, 58, 237, 0.3)"
-              }}
-              whileTap={{ scale: 0.95 }}
-              title="Baixar Currículo PDF"
-            >
-              <FaDownload className="btn-icon" />
-              <span className="btn-text">Baixar CV</span>
-              <FaMagic className="btn-sparkle" />
-            </motion.button>
-
             {/* Mobile Menu Button */}
             <motion.button
               className="mobile-menu-btn"
@@ -509,12 +478,6 @@ const Header = ({ theme, toggleTheme }) => {
                         <span>Fullstack</span>
                       </div>
                     </div>
-                    
-                    <div className="mobile-theme-toggle">
-                      <button onClick={toggleTheme}>
-                        {theme === 'light' ? <FaMoon /> : <FaSun />}
-                      </button>
-                    </div>
                   </div>
 
                   {/* Mobile Navigation */}
@@ -571,21 +534,6 @@ const Header = ({ theme, toggleTheme }) => {
                       </motion.a>
                     ))}
                   </div>
-
-                  {/* Mobile Download Button */}
-                  <motion.button
-                    className="mobile-download-btn"
-                    onClick={handleDownloadCV}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.9 }}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    <FaDownload />
-                    <span>Baixar Currículo</span>
-                    <FaRocket className="rocket-icon" />
-                  </motion.button>
                 </motion.div>
               </motion.div>
             )}

@@ -1,5 +1,7 @@
-// src/data/projectsData.js
-
+import buguerDelicia from '../assets/images/buguer-delicia.jpg';
+import transitaAI from '../assets/images/transita-ai.jpg';
+import grupoAlmeida from '../assets/images/grupo-almeida-capital.png';
+import emannuelDev from '../assets/images/emannuel-dev.jpg';
 export const servicesData = [
   // Serviços Principais
   {
@@ -384,32 +386,41 @@ export const processSteps = [
 export const projectsData = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "Plataforma completa de e-commerce com painel administrativo",
-    image: "/api/placeholder/400/250",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    title: "Buger Delicia – Plataforma de E-commerce",
+    description: "Plataforma digital moderna para hamburgueria artesanal, combinando design arrojado com experiência de compra fluida. Desenvolvida com React no frontend, Node.js no backend e MongoDB para gestão de dados. Integração com Stripe para transações seguras e hospedagem na Vercel para performance otimizada.",
+    image: buguerDelicia,
+    technologies: ["React", "Node.js", "MongoDB", "Stripe", "Vercel"],
+    githubUrl: "https://github.com/EmannuelMt/Buguer-Delicia.git",
+    liveUrl: "https://buguerdelicia.netlify.app/",
     featured: true
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "Aplicativo de gerenciamento de tarefas com drag & drop",
-    image: "/api/placeholder/400/250",
-    technologies: ["React", "TypeScript", "Firebase", "Tailwind"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    title: "Transita.AI – Solução para Logística",
+    description: "MVP inteligente para otimização de operações logísticas, oferecendo insights em tempo real sobre rotas, entregas e desempenho de frota. Desenvolvido com React e CSS puro, proporciona interface intuitiva para tomada de decisão estratégica. Hospedagem no Netlify com foco em escalabilidade e transformação digital do setor.",
+    image: transitaAI,
+    technologies: ["React", "CSS", "JavaScript", "MongoDB", "Firebase", "Netlify"],
+    githubUrl: "https://github.com/EmannuelMt/Transita.Ai-Mvp.git",
+    liveUrl: "https://transita-ai-mvp.netlify.app/",
     featured: true
   },
   {
     id: 3,
-    title: "Weather Dashboard",
-    description: "Dashboard meteorológico com previsões em tempo real",
-    image: "/api/placeholder/400/250",
-    technologies: ["Vue.js", "Express", "OpenWeather API"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    featured: false
-  }
+    title: "Grupo Almeida Capital",
+    description: "Plataforma corporativa para empresa de consultoria e gestão de investimentos. Desenvolvida com React, oferece uma presença digital sólida para organização focada em crescimento empresarial, estruturação financeira e governança corporativa.",
+    image: grupoAlmeida,
+    technologies: ["React", "CSS3", "JavaScript"],
+    liveUrl: "https://grupoalmeidacapital.com.br",
+    featured: true
+  },
+  {
+    id: 4,
+    title: "Emannuel Dev Solutions",
+    description: "Site institucional para empresa de desenvolvimento fullstack especializada em soluções digitais completas. Desenvolvido com React, apresenta portfólio de serviços desde protótipo até produto final, com foco em qualidade e escalabilidade.",
+    image: emannuelDev,
+    technologies: ["React", "CSS3", "JavaScript", "Netlify"],
+    githubUrl: "https://github.com/EmannuelMt/Portf-lio-Emannuel-Dev-Full-Stack-Solutions.git",
+    liveUrl: "https://portflioemannueldevfullstack.netlify.app/",
+    featured: true
+  },
 ];

@@ -1,11 +1,11 @@
 import { useCallback } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  FaCode, 
-  FaDatabase, 
-  FaPalette, 
-  FaServer, 
-  FaDocker, 
+import {
+  FaCode,
+  FaDatabase,
+  FaPalette,
+  FaServer,
+  FaDocker,
   FaGitAlt,
   FaAws,
   FaReact,
@@ -25,9 +25,9 @@ import {
   FaCertificate,
   FaStar
 } from 'react-icons/fa';
-import { 
-  SiTypescript, 
-  SiPostgresql, 
+import {
+  SiTypescript,
+  SiPostgresql,
   SiMongodb,
   SiExpress,
   SiPostman
@@ -43,7 +43,7 @@ import verifiedBadge from '../assets/images/logo.png';
 const EXECUTIVE_DATA = {
   profile: {
     name: "Emannuel Matos",
-    title: "Desenvolvedor Fullstack Júnior",
+    title: "Desenvolvedor Fullstack ",
     experience: "2 anos",
     specialization: "Desenvolvimento de Aplicações Web Modernas",
     status: "Disponível para oportunidades",
@@ -51,31 +51,31 @@ const EXECUTIVE_DATA = {
     email: "emannueldevfullstacksolutions@gmail.com"
   },
   metrics: [
-    { 
-      value: "15+", 
-      label: "Projetos Concluídos", 
-      suffix: "", 
+    {
+      value: "15+",
+      label: "Projetos Concluídos",
+      suffix: "",
       color: "purple",
       icon: <FaCode className="metric-icon" />
     },
-    { 
-      value: "95", 
-      label: "Taxa de Entrega", 
-      suffix: "%", 
+    {
+      value: "95",
+      label: "Taxa de Entrega",
+      suffix: "%",
       color: "green",
       icon: <FaCheckCircle className="metric-icon" />
     },
-    { 
-      value: "10K+", 
-      label: "Linhas de Código", 
-      suffix: "", 
+    {
+      value: "10K+",
+      label: "Linhas de Código",
+      suffix: "",
       color: "blue",
       icon: <FaStar className="metric-icon" />
     },
   ],
   techStack: [
-    { 
-      name: "React", 
+    {
+      name: "React",
       category: "Frontend",
       level: "intermediário",
       years: "6 meses",
@@ -83,17 +83,17 @@ const EXECUTIVE_DATA = {
       proficiency: 70,
       color: "#61DAFB"
     },
-    { 
-      name: "Node.js", 
+    {
+      name: "Node.js",
       category: "Backend",
-      level: "intermediário", 
+      level: "intermediário",
       years: "3 meses",
       icon: <FaNodeJs className="tech-stack-icon" />,
       proficiency: 60,
       color: "#339933"
     },
-    { 
-      name: "JavaScript", 
+    {
+      name: "JavaScript",
       category: "Linguagem",
       level: "avançado",
       years: "1 ano",
@@ -101,8 +101,8 @@ const EXECUTIVE_DATA = {
       proficiency: 85,
       color: "#F7DF1E"
     },
-    { 
-      name: "CSS3", 
+    {
+      name: "CSS3",
       category: "Estilização",
       level: "avançado",
       years: "1 ano",
@@ -110,8 +110,8 @@ const EXECUTIVE_DATA = {
       proficiency: 80,
       color: "#1572B6"
     },
-    { 
-      name: "PostgreSQL", 
+    {
+      name: "PostgreSQL",
       category: "Banco de Dados",
       level: "básico",
       years: "4 meses",
@@ -119,24 +119,16 @@ const EXECUTIVE_DATA = {
       proficiency: 50,
       color: "#336791"
     },
-    { 
-      name: "Docker", 
-      category: "DevOps",
-      level: "básico",
-      years: "3 meses",
-      icon: <FaDocker className="tech-stack-icon" />,
-      proficiency: 40,
-      color: "#2496ED"
-    }
+
   ],
   certifications: [
     { name: "HTML5 e CSS3 - Curso Completo", icon: <FaHtml5 /> },
-    { name: "JavaScript Moderno ES6+", icon: <FaJs /> },
-    { name: "Python para Data Science", icon: <FaCode /> },
-    { name: "React & Redux - Frontend Development", icon: <FaReact /> },
-    { name: "Docker & Containers", icon: <FaDocker /> },
-    { name: "MySQL & Database Design", icon: <FaDatabase /> },
-    { name: "Git e GitHub - Controle de Versão", icon: <FaGitAlt /> }
+    { name: "JavaScript ", icon: <FaJs /> },
+    { name: "Python para Desenvolvimento de bots", icon: <FaCode /> },
+    { name: "React - Frontend Development", icon: <FaReact /> },
+    { name: "Git e GitHub - Controle de Versão", icon: <FaGitAlt /> },
+    { name: "Fundamentos de Logística", icon: <FaDatabase /> },
+    { name: "Lógica de Programação", icon: <FaCode /> }
   ],
   skills: {
     technical: [
@@ -146,14 +138,16 @@ const EXECUTIVE_DATA = {
       { name: "CSS3", icon: <FaCss3Alt /> },
       { name: "HTML5", icon: <FaHtml5 /> },
       { name: "Git", icon: <FaGitAlt /> },
-      { name: "SQL", icon: <FaDatabase /> },
       { name: "Python", icon: <FaCode /> }
     ],
     soft: [
       { name: "Comunicação", icon: <FaUserTie /> },
       { name: "Trabalho em Equipe", icon: <FaUserTie /> },
       { name: "Resolução de Problemas", icon: <FaTools /> },
-      { name: "Aprendizado Rápido", icon: <FaGraduationCap /> }
+      { name: "Aprendizado Rápido", icon: <FaGraduationCap /> },
+      { name: "Adaptabilidade", icon: <FaRocket /> },
+      { name: "Pensamento Crítico", icon: <FaStar /> }
+
     ]
   }
 };
@@ -187,7 +181,7 @@ const ExecutiveProfile = () => {
     <section id="executive-profile" className="executive-profile-section">
       <div className="container">
         {/* Header Executivo */}
-        <motion.div 
+        <motion.div
           className="executive-header"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -195,7 +189,7 @@ const ExecutiveProfile = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="executive-badges">
-            <motion.div 
+            <motion.div
               className="executive-badge primary"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
@@ -203,7 +197,7 @@ const ExecutiveProfile = () => {
               <FaCertificate className="badge-icon" />
               <span>Desenvolvedor Fullstack</span>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="executive-badge secondary"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
@@ -212,7 +206,7 @@ const ExecutiveProfile = () => {
               <span>Em Crescimento</span>
             </motion.div>
           </div>
-          <motion.h2 
+          <motion.h2
             className="executive-title"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -223,7 +217,7 @@ const ExecutiveProfile = () => {
           </motion.h2>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="executive-grid"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -231,28 +225,28 @@ const ExecutiveProfile = () => {
           transition={{ duration: 0.8, staggerChildren: 0.2 }}
         >
           {/* Coluna da Imagem */}
-          <motion.div 
+          <motion.div
             className="executive-image-column"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <motion.div 
+            <motion.div
               className="profile-image-container"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
               <div className="image-frame executive-frame">
-                <img 
-                  src={profileImage} 
-                  alt="Emannuel Matos - Desenvolvedor Fullstack" 
+                <img
+                  src={profileImage}
+                  alt="Emannuel Matos - Desenvolvedor Fullstack"
                   loading="lazy"
                   className="executive-photo"
                 />
-                
+
                 {/* Overlay de Tech Stack */}
-                <motion.div 
+                <motion.div
                   className="tech-stack-overlay"
                   initial={{ opacity: 0 }}
                   whileHover={{ opacity: 1 }}
@@ -265,7 +259,7 @@ const ExecutiveProfile = () => {
                     </div>
                     <div className="tech-stack-grid">
                       {EXECUTIVE_DATA.techStack.map((tech, index) => (
-                        <motion.div 
+                        <motion.div
                           key={tech.name}
                           className="tech-item executive-tech"
                           whileHover={{ scale: 1.05, y: -2 }}
@@ -281,9 +275,9 @@ const ExecutiveProfile = () => {
                             <span className="tech-name">{tech.name}</span>
                             <span className="tech-category">{tech.category}</span>
                             <div className="proficiency-bar">
-                              <div 
+                              <div
                                 className="proficiency-fill"
-                                style={{ 
+                                style={{
                                   width: `${tech.proficiency}%`,
                                   backgroundColor: getProficiencyColor(tech.proficiency)
                                 }}
@@ -300,7 +294,7 @@ const ExecutiveProfile = () => {
                 </motion.div>
 
                 {/* Badge de Experiência */}
-                <motion.div 
+                <motion.div
                   className="experience-badge"
                   initial={{ scale: 0, rotate: -180 }}
                   whileInView={{ scale: 1, rotate: 0 }}
@@ -315,7 +309,7 @@ const ExecutiveProfile = () => {
             </motion.div>
 
             {/* Métricas Rápidas */}
-            <motion.div 
+            <motion.div
               className="executive-metrics"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -323,7 +317,7 @@ const ExecutiveProfile = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               {EXECUTIVE_DATA.metrics.map((metric, index) => (
-                <motion.div 
+                <motion.div
                   key={metric.label}
                   className={`metric-item metric-${metric.color}`}
                   whileHover={{ scale: 1.05, y: -5 }}
@@ -343,7 +337,7 @@ const ExecutiveProfile = () => {
             </motion.div>
 
             {/* Skills Rápidas */}
-            <motion.div 
+            <motion.div
               className="skills-preview"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -357,7 +351,7 @@ const ExecutiveProfile = () => {
                 </div>
                 <div className="skills-tags">
                   {EXECUTIVE_DATA.skills.technical.map((skill, index) => (
-                    <motion.span 
+                    <motion.span
                       key={skill.name}
                       className="skill-tag"
                       whileHover={{ scale: 1.05 }}
@@ -369,7 +363,7 @@ const ExecutiveProfile = () => {
                   ))}
                 </div>
               </div>
-              
+
               <div className="skills-section">
                 <div className="skills-header">
                   <FaUserTie className="skills-icon" />
@@ -377,7 +371,7 @@ const ExecutiveProfile = () => {
                 </div>
                 <div className="skills-tags">
                   {EXECUTIVE_DATA.skills.soft.map((skill, index) => (
-                    <motion.span 
+                    <motion.span
                       key={skill.name}
                       className="skill-tag soft"
                       whileHover={{ scale: 1.05 }}
@@ -393,7 +387,7 @@ const ExecutiveProfile = () => {
           </motion.div>
 
           {/* Coluna de Informações */}
-          <motion.div 
+          <motion.div
             className="executive-info-column"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -402,7 +396,7 @@ const ExecutiveProfile = () => {
           >
             {/* Header de Informações */}
             <div className="executive-info-header">
-              <motion.h1 
+              <motion.h1
                 className="executive-name"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -410,7 +404,7 @@ const ExecutiveProfile = () => {
                 transition={{ duration: 0.5 }}
               >
                 {EXECUTIVE_DATA.profile.name}
-                <motion.span 
+                <motion.span
                   className="location-tag"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
@@ -420,8 +414,8 @@ const ExecutiveProfile = () => {
                   {EXECUTIVE_DATA.profile.location}
                 </motion.span>
               </motion.h1>
-              
-              <motion.p 
+
+              <motion.p
                 className="executive-role"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -431,7 +425,7 @@ const ExecutiveProfile = () => {
                 {EXECUTIVE_DATA.profile.title}
               </motion.p>
 
-              <motion.div 
+              <motion.div
                 className="contact-info"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -442,7 +436,7 @@ const ExecutiveProfile = () => {
                 <span className="contact-email">{EXECUTIVE_DATA.profile.email}</span>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 className="availability-status"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -455,7 +449,7 @@ const ExecutiveProfile = () => {
             </div>
 
             {/* Especialização */}
-            <motion.div 
+            <motion.div
               className="specialization-section"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -472,13 +466,14 @@ const ExecutiveProfile = () => {
               <div className="expertise-tags">
                 {[
                   { name: "Desenvolvimento Frontend", icon: <FaCode /> },
-                  { name: "APIs REST", icon: <FaServer /> },
+                  { name: "Desenvolvimento Backend", icon: <FaServer /> },
+                  { name: "Banco de Dados", icon: <FaDatabase /> },
                   { name: "Responsive Design", icon: <FaPalette /> },
                   { name: "Clean Code", icon: <FaCode /> },
                   { name: "Versionamento", icon: <FaGitAlt /> },
                   { name: "UI/UX", icon: <FaPalette /> }
                 ].map((skill) => (
-                  <motion.span 
+                  <motion.span
                     key={skill.name}
                     className="expertise-tag"
                     whileHover={{ scale: 1.05 }}
@@ -492,7 +487,7 @@ const ExecutiveProfile = () => {
             </motion.div>
 
             {/* Certificações */}
-            <motion.div 
+            <motion.div
               className="certifications-section"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -505,7 +500,7 @@ const ExecutiveProfile = () => {
               </div>
               <div className="certifications-grid">
                 {EXECUTIVE_DATA.certifications.map((cert, index) => (
-                  <motion.div 
+                  <motion.div
                     key={cert.name}
                     className="certification-item"
                     whileHover={{ scale: 1.02, x: 5 }}
@@ -521,7 +516,7 @@ const ExecutiveProfile = () => {
             </motion.div>
 
             {/* Call to Action */}
-            <motion.div 
+            <motion.div
               className="executive-cta"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -529,7 +524,7 @@ const ExecutiveProfile = () => {
               transition={{ duration: 0.5, delay: 0.5 }}
             >
               <div className="cta-buttons">
-                <motion.button 
+                <motion.button
                   className="cta-button primary"
                   onClick={handleContact}
                   whileHover={{ scale: 1.05, y: -2 }}
@@ -538,8 +533,8 @@ const ExecutiveProfile = () => {
                   <FaEnvelope className="button-icon" />
                   <span>Contato Direto</span>
                 </motion.button>
-                
-                <motion.button 
+
+                <motion.button
                   className="cta-button secondary"
                   onClick={handleDownloadCV}
                   whileHover={{ scale: 1.05, y: -2 }}
@@ -549,7 +544,7 @@ const ExecutiveProfile = () => {
                   <span>Baixar CV</span>
                 </motion.button>
 
-                <motion.button 
+                <motion.button
                   className="cta-button github"
                   onClick={handleGitHub}
                   whileHover={{ scale: 1.05, y: -2 }}
@@ -561,16 +556,16 @@ const ExecutiveProfile = () => {
               </div>
 
               {/* Assinatura */}
-              <motion.div 
+              <motion.div
                 className="signature-section"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.6 }}
               >
-                <img 
-                  src={signatureImage} 
-                  alt="Assinatura Emannuel Matos" 
+                <img
+                  src={signatureImage}
+                  alt="Assinatura Emannuel Matos"
                   className="signature"
                 />
                 <div className="signature-info">
