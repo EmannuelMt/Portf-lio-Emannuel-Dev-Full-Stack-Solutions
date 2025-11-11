@@ -162,7 +162,7 @@ const ExecutiveProfile = () => {
   }, []);
 
   const handleGitHub = useCallback(() => {
-    window.open('https://github.com/emannuelmatos', '_blank');
+    window.open('https://github.com/EmannuelMt', '_blank');
   }, []);
 
   const getProficiencyColor = (proficiency) => {
