@@ -59,7 +59,7 @@ const Services = () => {
 
   const handleContactClick = useCallback((serviceTitle) => {
     const message = `Olá! Gostaria de solicitar um orçamento para o serviço: ${serviceTitle}`;
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5562984317595?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   }, []);
 
