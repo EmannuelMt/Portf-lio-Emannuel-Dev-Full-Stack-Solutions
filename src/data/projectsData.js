@@ -2,6 +2,7 @@ import buguerDelicia from '../assets/images/buguer-delicia.jpg';
 import transitaAI from '../assets/images/transita-ai.jpg';
 import grupoAlmeida from '../assets/images/grupo-almeida-capital.png';
 import emannuelDev from '../assets/images/emannuel-dev.jpg';
+import ecosdarealidade from '../assets/images/ecos-da-realidade.png';
 export const servicesData = [
   // Serviços Principais
   {
@@ -427,7 +428,7 @@ export const projectsData = [
     id: 5,
     title: "Ecos Da Realidade",
     description: "Site institucional para jogadores de ordem paranormal rpg opensource.",
-    image: emannuelDev,
+    image: ecosdarealidade,
     technologies: ["React", "CSS3", "JavaScript", "Netlify,Node.js,Express,Firebase Auth,Firestore,Real Time Database"],
     liveUrl: "https://ecosdarealidade.netlify.app/",
     featured: true
