@@ -423,4 +423,13 @@ export const projectsData = [
     liveUrl: "https://portflioemannueldevfullstack.netlify.app/",
     featured: true
   },
+  {
+    id: 5,
+    title: "Ecos Da Realidade",
+    description: "Site institucional para jogadores de ordem paranormal rpg opensource.",
+    image: emannuelDev,
+    technologies: ["React", "CSS3", "JavaScript", "Netlify,Node.js,Express,Firebase Auth,Firestore,Real Time Database"],
+    liveUrl: "https://ecosdarealidade.netlify.app/",
+    featured: true
+  },
 ];
