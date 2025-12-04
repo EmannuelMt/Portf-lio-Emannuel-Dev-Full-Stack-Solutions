@@ -2,7 +2,7 @@ import buguerDelicia from '../assets/images/buguer-delicia.jpg';
 import transitaAI from '../assets/images/transita-ai.jpg';
 import grupoAlmeida from '../assets/images/grupo-almeida-capital.png';
 import emannuelDev from '../assets/images/emannuel-dev.jpg';
-import ecosdarealidade from '../assets/images/ecos-da-realidade.png';
+import ecosdarealidade from '../assets/images/ecos-da-realidade.jpg';
 export const servicesData = [
   // Serviços Principais
   {
